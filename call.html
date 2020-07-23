@@ -1,0 +1,27 @@
+<html>
+  <head>
+    <title>JavaScript</title>
+  </head>
+  <body>
+    <h4>call</h4>
+    <script>
+      function JobSeeker(x, y, z)
+      {
+        this.name = x;
+        this.qualification = y;
+        this.experience = z;
+      }
+
+      function Employee(a, b, c, d, e)
+      {
+        JobSeeker.call(this, a, b, c);
+        this.empid = d;
+        this.salary = e;
+      }
+
+      var e = new Employee("Scott", "Graduation", 2, 101, 9000);
+      console.log(e);
+    </script>
+  </body>
+</html>
+

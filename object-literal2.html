@@ -1,0 +1,32 @@
+<html>
+  <head>
+    <title>JavaScript</title>
+  </head>
+  <body>
+    <h4>Object Literal 2</h4>
+    <script>
+      var student = {
+        studentid: 1234,
+        studentname: "Scott",
+        marks: 80,
+        result: function()
+        {
+          if (this.marks >= 35)
+          {
+            return "Pass";
+          }
+          else
+          {
+            return "Fail";
+          }
+        }
+      };
+      console.log(student);
+      console.log(student.studentid);
+      console.log(student.studentname);
+      console.log(student.marks);
+      console.log(student.result());
+    </script>
+  </body>
+</html>
+

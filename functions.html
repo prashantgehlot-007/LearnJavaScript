@@ -1,0 +1,36 @@
+<html>
+  <head>
+    <title>JavaScript</title>
+  </head>
+  <body>
+    <h4>Functions</h4>
+    <script>
+      function add(a, b)
+      {
+        var c;
+        c = a + b;
+        return c;
+      }
+      var result = add(10, 20);
+      console.log(result);
+
+      function calculateEmi(price, months, tax)
+      {
+        var emi = (price + tax) / months;
+        return emi;
+      }
+      var e = calculateEmi(10000, 6, 1000);
+      console.log("Emi " + e);
+    </script>
+  </body>
+</html>
+
+
+<!--
+price = 10000
+tax = 1000
+months = 6
+
+10000 + 1000 = 11000
+1834p.m.
+-->

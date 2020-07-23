@@ -1,0 +1,35 @@
+<html>
+  <head>
+    <title>JavaScript</title>
+  </head>
+  <body>
+    <h4>Object Array Literal</h4>
+    <script>
+      function r()
+      {
+        if (this.marks >= 35)
+          return "Pass";
+        else
+          return "Fail";
+      }
+
+      var students = 
+      [
+        { studentid: 101, studentname: "Scott", marks: 80, result: r },
+        { studentid: 102, studentname: "Allen", marks:74, result: r },
+        { studentid: 103, studentname: "John", marks: 91, result: r },
+        { studentid: 104, studentname: "Ford", marks: 47, result: r },
+      ];
+
+      for (var i = 0; i < students.length; i++)
+      {
+        console.log(students[i].studentid);
+        console.log(students[i].studentname);
+        console.log(students[i].marks);
+        console.log(students[i].result());
+        console.log("--------------------------");
+      }
+    </script>
+  </body>
+</html>
+
